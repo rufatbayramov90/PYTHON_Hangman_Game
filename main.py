@@ -2,8 +2,12 @@ import random
 word_list = ["ardvark", "baboon", "camel"]
 
 chosen_word = random.choice(word_list)
+display = []
+for letter in chosen_word:
+    display += "_"
+print(display)
 
-guess = input("huess a letter").lower()
+guess = input("Guess a letter").lower()
 
 for letter in chosen_word:
     if letter == guess:
